@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Container({ data }) {
   data.map((row, i) => {
@@ -45,7 +46,9 @@ function Container({ data }) {
           {data.map((item, index) => (
             <tr key={index} className="even:bg-gray-100 hover:bg-gray-200">
               <td className="px-4 py-2 text-start">{item.id}</td>
-              <td className="px-4 py-2 text-start">{item.links}</td>
+              <td className="px-4 py-2 text-start">
+                <a href={item.links} className="text-blue-300 underline">{item.links} </a>
+              </td>
               <td className="px-4 py-2 text-start">{item.prefix}</td>
               <td className="px-4 py-2 text-start">
                 <label>
@@ -62,7 +65,7 @@ function Container({ data }) {
                 {selectedTags[index] &&
                   selectedTags[index].map((tag) => (
                     <span className="p-[4px] mx-[2px] rounded-sm bg-[#605BFF] text-white">
-                      {tag} 
+                      {tag}
                     </span>
                   ))}
               </td>
