@@ -13,6 +13,7 @@ import { useState } from "react";
 
 const UploadFile = () => {
   const [data, setData] = useState({});
+  const [tableData, setTableData] = useState();
 
   const handleUpload = useCallback(() => {
     const file = data.acceptedFiles[0];
@@ -22,13 +23,13 @@ const UploadFile = () => {
       dynamicTyping: true,
       complete: (result) => {
         const jsonData = result.data;
-        console.log(jsonData);
+        setTableData(jsonData);
       },
       error: (error) => {
         console.error("Papa Parse error:", error.message);
       },
     });
-  }, [data]);
+  }, [data, tableData]);
 
   return (
     <div className="flex flex-row justify-start ">
@@ -71,9 +72,11 @@ const UploadFile = () => {
           </div>
         </div>
 
-        {/* <div className="w-full ">
-          <Container data={data} />
-        </div> */}
+        {tableData && (
+          <div className="w-full ">
+            <Container data={tableData} />
+          </div>
+        )}
       </div>
     </div>
   );

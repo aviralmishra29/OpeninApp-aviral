@@ -11,7 +11,7 @@ import { PiSquaresFourFill } from "react-icons/pi";
 
 const Sidebar = () => {
   return (
-    <div className="w-[15vw] h-[100vh] flex flex-col gap-y-6 ">
+    <div className="w-[15vw] h-[100vh] flex flex-col gap-y-6  max-sm:w-[80%] max-sm:bg-richblack-25 max-sm:items-start max-sm:px-8">
       <div className="flex flex-row justify-center gap-x-3 items-center mt-3 py-2">
         <span>
           <img src={Sidebar_logo} alt="Logo" />
@@ -19,8 +19,8 @@ const Sidebar = () => {
         <span className="text-black font-semibold">BASE</span>
       </div>
       <div className=" bg-white  ">
-        <ul className="flex flex-col gap-y-6 justify-center items-center py-4 ">
-          <li className="flex flex-row justify-start gap-x-2.5 px-5 w-full text-pure-greys-300">
+        <ul className="flex flex-col gap-y-6 justify-center items-center py-4 max-sm:bg-richblack-25">
+          <li className="flex flex-row justify-start gap-x-2.5 px-5 w-full text-pure-greys-300 ">
             <PiSquaresFourFill size="24px" color="gray" />
             Dashboard
           </li>
