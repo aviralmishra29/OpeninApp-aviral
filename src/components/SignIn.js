@@ -10,7 +10,7 @@ import Ellipse from "../assests/Elli.png"
 
 const SignIn = () => {
   return (
-    <div className="flex flex-row justify-center items-center bg-gray-100 my-15 ">
+    <div className="flex flex-row justify-center items-center bg-gray-100 sm:my-14 ">
       <div  style={{backgroundImage: `url(${Leftside})`, backgroundSize:"cover",backgroundRepeat: "no-repeat",}} className="h-[80vh] w-[35vw] bg-[#F8FAFF]  max-sm:hidden">
         <div className="flex felx-row justify-start items-center px-6 h-[20%] w-full " > 
           <div className="" >  <img src={subtract} alt="vector" height='60px' width='60px' />  </div>
