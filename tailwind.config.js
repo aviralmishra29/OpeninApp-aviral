@@ -53,6 +53,9 @@ module.exports = {
         800: "#022B32",
         900: "#001B1D",
       },
+      red: {
+        100: "#FF0000"
+      },
       caribbeangreen: {
         5: "#C1FFFD",
         25: "#83F1DE",

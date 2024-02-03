@@ -5,8 +5,9 @@ import Analytics from "../assests/Analytics.png";
 import Invoice from "../assests/Invoice.png";
 import Schedule from "../assests/Schedule.png";
 import Notification from "../assests/Notification.png";
-import Setting from "../assests/Settings.png"
-import Calendar from "../assests/Group 7564.png"
+import Setting from "../assests/Settings.png";
+import Calendar from "../assests/Group 7564.png";
+import { PiSquaresFourFill } from "react-icons/pi";
 
 const Sidebar = () => {
   return (
@@ -19,30 +20,27 @@ const Sidebar = () => {
       </div>
       <div className=" bg-white  ">
         <ul className="flex flex-col gap-y-6 justify-center items-center py-4 ">
-          <li className="flex flex-row justify-start gap-x-3 px-5 w-full " >
-  <img src={Category} alt="" width='24px' height='24px' />
+          <li className="flex flex-row justify-start gap-x-2.5 px-5 w-full text-pure-greys-300">
+            <PiSquaresFourFill size="24px" color="gray" />
             Dashboard
           </li>
-          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full " >
+          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full ">
             <img src={Analytics} alt="" />
           </li>
-          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full " >
+          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full ">
             <img src={Invoice} alt="" />
           </li>
-          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full " >
-            {" "}
+          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full ">
             <img src={Schedule} alt="" />
           </li>
-          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full " >
+          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full ">
             <img src={Calendar} alt="" />
           </li>
-          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full " >
-            {" "}
+          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full ">
             <img src={Notification} alt="" />
           </li>
-          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full " >
-            {" "}
-            <img src={Setting} alt="" /> 
+          <li className="flex flex-row justify-start gap-x-3 px-5 py-3  w-full ">
+            <img src={Setting} alt="" />
           </li>
         </ul>
       </div>
